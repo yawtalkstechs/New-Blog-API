@@ -11,5 +11,9 @@
         </p>
         {{ post.body|truncatewords:30|linebreaks }}
     {% endfor %}
+    {% comment "function  base view use thispagination" %}
     {% include "pagination.html" with page=posts %}
+    {% endcomment %}
+
+    {% include "pagination.html" with page=page_obj %}
 {% endblock content %}
