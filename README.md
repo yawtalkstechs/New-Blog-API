@@ -1,7 +1,8 @@
 This is a django blog that includes Django Rest Framework.
 Change directory into blog eg. cd blog
 Where the manage.py is located.
-Run this command:
+Run this commands:
+ - pip install -r requirements.txt
  - python manage.py makemigrations
  - python manage.py migrate
  - python manage.py createsuperuser
