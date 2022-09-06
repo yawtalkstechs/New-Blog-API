@@ -7,4 +7,4 @@ Run this commands:
  - python manage.py migrate
  - python manage.py createsuperuser
  - python manage.py runserver
-Open your browser and enter the localhost address. eg http://127.0.0.1:8000
+Open your browser and enter the localhost address. eg http://127.0.0.1:8000/blog/
