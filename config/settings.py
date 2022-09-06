@@ -39,8 +39,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "blog.apps.BlogConfig",
+    "api.apps.ApiConfig",
+
     "django_extensions",
     "rest_framework",
+    "crispy_forms",
 ]
 
 REST_FRAMEWORK = {
