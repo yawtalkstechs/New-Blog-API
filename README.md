@@ -1,5 +1,5 @@
 This is a django blog that includes Django Rest Framework.
-Change directory into blog eg. cd blog
+Change directory into blog eg. cd blog <br>
 Where the manage.py is located.
 Run this commands:
  - pip install -r requirements.txt
