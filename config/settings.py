@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "django_extensions",
     "rest_framework",
     "crispy_forms",
+    "taggit",
 ]
 
 REST_FRAMEWORK = {
@@ -62,6 +63,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "config.urls"
+
+TAGGIT_CASE_INSENSITIVE = True
 
 TEMPLATES = [
     {
