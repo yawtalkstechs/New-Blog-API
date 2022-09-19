@@ -39,8 +39,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
     "django.contrib.sites",
     "django.contrib.sitemaps",
+    "django.contrib.postgres",
 
     "blog.apps.BlogConfig",
     "api.apps.ApiConfig",
@@ -94,8 +96,12 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "newblog",
+        "USER": "blogadmin",
+        "PASSWORD": "blog@12345!",
+        "HOST": "localhost",
+        "PORT": 5432
     }
 }
 

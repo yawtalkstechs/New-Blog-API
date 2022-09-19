@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import post_detail, post_list, PostListView, post_share, post_comment
+from .views import post_detail, post_list, PostListView, post_search, post_share, post_comment
 from .feeds import LatestPostsFeed, AtomPostsFeed
 
 app_name = "blog"
@@ -14,4 +14,5 @@ urlpatterns = [
     path("<int:post_id>/comment/", post_comment, name="post_comment"),
     path("<int:year>/<int:month>/<int:day>/<slug:post>/", 
         post_detail, name="post_detail"),
+    path("search/", post_search, name="post_search"),
 ]

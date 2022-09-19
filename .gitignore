@@ -2,3 +2,7 @@
 __pycache__/
 *.log
 *.pyc
+db.json
+mysite_data.json
+site_data.xml
+site_data.YAML
