@@ -6,7 +6,7 @@ from .views import PostViewSet
 app_name = 'api'
 
 router = DefaultRouter()
-router.register(r'blogs', PostViewSet, basename='blogs')
+router.register(r'blog', PostViewSet, basename='blog')
 
 urlpatterns = [
     path('', include(router.urls)),
